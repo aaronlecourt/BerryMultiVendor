@@ -39,7 +39,7 @@
     <div class="nav header-middle">
         <div class="header-item header__left">
             <div class="logo">
-                <a href="/home">
+                <a href="/">
                 <img src="{{asset('images/logo.png')}}" alt="Logo"></a>
             </div>
         </div>

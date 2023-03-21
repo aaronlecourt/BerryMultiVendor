@@ -14,7 +14,7 @@ class UserController extends Controller
         $user = User::where(['name'=>$req->name])->first();
 
         if(!$user || !Hash::check($req->password,$user->password)){
-            return "Username or password is incorrect!";
+            return "Username/Password is incorrect!";
         }else{
             $req->session()->put('user',$user);
             return redirect('/');
